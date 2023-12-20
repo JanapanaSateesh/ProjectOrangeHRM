@@ -21,10 +21,10 @@ public class ExtentReportCls {
 	public void startExtent() {
 		
 		
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH-mm-ss");
+		/* DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH-mm-ss");
 		LocalDateTime now = LocalDateTime.now();
 		String date = dtf.format(now).toString();
-	
+	*/
 		
 		extent = new ExtentReports();
 		spark = new ExtentSparkReporter("./Reports/OrangeHRMReport"+date+".html");
