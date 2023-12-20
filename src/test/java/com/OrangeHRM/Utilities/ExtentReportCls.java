@@ -27,7 +27,7 @@ public class ExtentReportCls {
 	*/
 		
 		extent = new ExtentReports();
-		spark = new ExtentSparkReporter("./Reports/OrangeHRMReport"+date+".html");
+		spark = new ExtentSparkReporter("./Reports/OrangeHRMReport.html");
 		spark.config().setTheme(Theme.DARK);
 		spark.config().setDocumentTitle("OrangeHRM Summary Report");
 		extent.attachReporter(spark);
